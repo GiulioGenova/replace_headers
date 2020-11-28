@@ -1,5 +1,6 @@
 # replace_headers
-A simple utility using awk to find and replace headers using a lookup table
+A simple utility that uses awk to find and replace words in a list of files using a lookup table
+It was designed in particular to replace old headers of a csv with new ones, but the replacement works on any line of the file
 
 Make sure that the files with extension .sh and .awk are executable. You can make them executable with the following command:
 
