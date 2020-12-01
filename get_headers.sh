@@ -6,4 +6,4 @@ for filename in  $1 ; do
 	sed '2q;d' "$filename" | awk -F , '{for (i=1;i<=NF;i++) print $i}' >> all_headers.txt
 done
 
-sort all_headers.txt | uniq > "$2"
+sort all_headers.txt | uniq >> "$2"

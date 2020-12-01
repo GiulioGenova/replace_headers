@@ -4,7 +4,15 @@ NR == FNR {
 }
 
 {
+
+if (FNR <= 4){
+
   for (key in rep)
+    
     gsub("\\y"key"\\y", rep[key])
-  print
+
+  print;
+} else{ print; }
+
+
 }
